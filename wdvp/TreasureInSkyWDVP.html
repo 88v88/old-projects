@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Treasures in the Sky | The Future of Asteroid Mining</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://i.ibb.co/w097YgB/Tex2.png">
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:300" rel="stylesheet">
+  <style>body{font-family:"Rajdhani",sans-serif;margin:0;background-color:#110710;color:#efedda;font-size:24px;overflow-x:hidden;overflow-y:scroll;user-select:none}h1{font-family:"Major Mono Display",sans-serif}a{color:#bba;transition:color 0.2s}a:hover{color:#ddc}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track-piece{background-color:#aaa5;-webkit-border-radius:6px}::-webkit-scrollbar-thumb{background-color:#fff7;border-radius:6px}.Small{position:absolute;animation:going infinite;border-radius:100px;background-size:100%;transition:opacity 0.5s}@keyframes going{0%{transform:translateY(0) translateX(0) rotate(0deg)}33%{transform:translateY(-4px) translateX(-3px) rotate(4deg)}67%{transform:translateY(4px) translateX(3px) rotate(-4deg)}100%{transform:translateY(0) translateX(0) rotate(0deg)}}#Fill{width:70%;display:inline-block;height:500px;position:absolute;left:0;top:2200px;box-sizing:border-box}#Infobox{width:100%;display:inline-block;box-sizing:border-box;position:relative;height:300px;text-align:center;vertical-align:top}#InfoTray{width:25%;display:inline-block;box-sizing:border-box;position:absolute;height:500px;text-align:center;vertical-align:top;top:2200px;right:0}#ChooseSpec{width:100%;display:inline-block;box-sizing:border-box;position:relative;height:150px;text-align:center;vertical-align:top;line-height:1;z-index:8}#MainTitle{text-align:center;position:absolute;left:0;top:0;width:100vw;display:block;height:500px;font-size:2.5vw;background-image:url(https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA13112_hires.jpg);background-attachment:fixed;background-size:cover;text-shadow:0 4px 6px #000a}#Necessity{width:100vw;display:block;height:500px;position:absolute;left:0;top:550px;box-sizing:border-box;text-align:center}#Sadness{border-top:double 3px #fff;width:100vw;display:block;height:500px;position:absolute;left:0;top:1100px;box-sizing:border-box;text-align:center;background-image:url(https://apod.nasa.gov/apod/image/0509/ic1396b_wright_f50.jpg);background-size:cover;background-attachment:fixed;text-shadow:0 2px 4px #000}.SadXmple{display:inline-block;width:20vw;box-sizing:border-box;padding:5px;height:500px;vertical-align:top;line-height:.8;text-align:left;text-shadow:0 2px 1px #000;z-index:5}.SadXmple>p{margin-top:1vw;margin-bottom:1vw;font-size:22px}.SadGuy{display:inline-block;width:8%;height:8vw;border-radius:20px;background-size:100%;top:50px;position:relative;box-shadow:0 5px 10px #000;box-sizing:border-box;transition:0.2s}.SadGuy:hover{transform:translateY(-5px)}#Answerinsky{width:100vw;display:block;height:500px;position:absolute;left:0;top:1650px;box-sizing:border-box;text-align:center}#Bkg{border-top:double 3px #fff;width:100vw;display:block;height:500px;position:absolute;left:0;top:2200px;box-sizing:border-box;background-image:url(https://svs.gsfc.nasa.gov/vis/a000000/a003800/a003895/starmap_g4k.jpg);background-size:cover;background-attachment:fixed;z-index:-1}.SolCircle{width:200px;height:200px;display:inline-block;margin-top:40px;margin-left:20px;margin-right:20px;background-image:linear-gradient(#1337ba,#1337ba00);border-radius:200px;box-shadow:0 10px 20px #0005;box-sizing:border-box;padding:5px;font-size:16px;text-align:center;transition:0.2s}.SolCircle:hover{transform:translateY(-5px)}.SolCube{width:280px;height:100px;display:inline-block;margin-top:40px;margin-left:1vw;margin-right:1vw;background-image:linear-gradient(#400415,#40041500);border-radius:200px;box-shadow:0 10px 20px #0005;box-sizing:border-box;padding:5px;font-size:20px;text-align:center;transition:0.2s;vertical-align:top;position:relative}.SolCube:hover{transform:translateY(-5px)}.SolCube>img{position:absolute;height:263px;bottom:-280px;left:80px}.Choose{appearance:none;width:15px;height:15px;outline:none;z-index:8}h1.Choose{font-size:60px}.Pic{display:inline-block;width:50px;margin-right:5px}#UglyScreen{width:100vw;height:100vh;position:fixed;display:none;background-color:#110710;font-family:"Major Mono Display",sans-serif;z-index:10;-webkit-backface-visibility:hidden;top:0;left:0}#UglyScreen>p{padding:20px;position:absolute;right:0;left:0;top:0;bottom:0;margin-left:auto;margin-right:auto;margin-top:auto;margin-bottom:auto;text-align:center;display:inline-block;font-size:32px}#Benefits{width:100vw;background-color:#110710;z-index:5;display:block;height:550px;position:absolute;left:0;top:2700px;box-sizing:border-box;text-align:center}#StepsTake{border-top:double 3px #fff;width:100vw;display:block;height:500px;position:absolute;left:0;top:3300px;box-sizing:border-box;text-align:center;background-image:url(https://nasaviz.gsfc.nasa.gov/vis/a010000/a012200/a012247/pf-1024.jpg);background-size:cover;background-attachment:fixed;text-shadow:0 2px 4px #000}#HallOfFame{width:100vw;display:block;height:500px;position:absolute;left:0;top:3850px;box-sizing:border-box;text-align:center}#Moneybag{border-top:double 3px #fff;width:100vw;display:block;height:500px;position:absolute;left:0;top:4400px;box-sizing:border-box;text-align:center;background-image:url(https://photojournal.jpl.nasa.gov/jpeg/PIA13111.jpg);background-size:cover;background-attachment:fixed;text-shadow:0 2px 4px #000}#WantMoney{width:100vw;display:block;height:500px;position:absolute;left:0;top:4950px;box-sizing:border-box;text-align:center}#Other{border-top:double 3px #fff;width:100vw;display:block;height:500px;position:absolute;left:0;top:5500px;box-sizing:border-box;text-align:center;background-image:url(https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07136_hires.jpg);background-size:cover;background-attachment:fixed;text-shadow:0 2px 4px #000}#RulesLaws{width:100vw;display:block;height:500px;position:absolute;left:0;top:6050px;box-sizing:border-box;text-align:center}#Thend{border-top:double 3px #fff;width:100vw;display:block;height:500px;position:absolute;left:0;top:6600px;box-sizing:border-box;text-align:center;background-image:url(https://www.jpl.nasa.gov/spaceimages/images/wallpaper/PIA03678-1920x1200.jpg);background-size:cover;background-attachment:fixed;text-shadow:0 2px 4px #000}#Citation{width:100vw;display:block;position:absolute;left:0;top:7150px;padding:50px;box-sizing:border-box;text-align:left;user-select:text}#Citation>h1{text-align:center}#Citation>p{text-indent:-50px;margin-left:50px}.SL{background-image:linear-gradient(#11071000,#110710ff);position:absolute;width:100vw;height:50px;z-index:5}#Slider{width:80%;-webkit-appearance:none;height:10px;border-radius:10px;background-color:#89abcd;outline:none}#Slider::-webkit-slider-thumb{-webkit-appearance:none;height:15px;width:15px;border-radius:15px;background-color:#fff;box-shadow:0 2px 5px #0003;cursor:pointer}#Slider::-moz-range-thumb{height:20px;width:20px;border-radius:20px;background-color:#fff;box-shadow:0 2px 5px #0003;cursor:pointer}#Straps{position:absolute;top:400px;left:10%}#Boots{position:absolute;top:390px;right:10%}.Boot{position:absolute;bottom:95%;left:25%;width:40px;z-index:-1}.WhyNot{width:30%;vertical-align:top;display:inline-block;padding:10px;font-size:20px;box-sizing:border-box}.WhyNo{height:50px;width:50px;transition:transform 0.2s}.WhyNo:hover{transform:translateY(-5px)}.Timeline{display:inline-block;width:100px;height:100px;margin-left:2vw;margin-right:2vw;transition:width 0.2s}.Timeline:hover{width:120px;height:120px}#Viewer{width:80%;height:200px;border-radius:20px;background-color:#101178;display:block;margin-left:auto;margin-right:auto;left:0;right:0;box-shadow:0 5px 10px #0003;padding:10px;box-sizing:border-box;position:absolute;bottom:50px}.TopIcon{position:absolute;top:2vw;left:2vw;border:solid 1px #fff;border-radius:20px;padding:5px;box-shadow:0 5px 5px #0008}.TopIcon>img{width:75px;height:75px}.TopIcon>b{margin:0}.Shipspace{display:inline-block;width:32vw}.Shipspace>img{width:50%;display:block;margin:auto;animation:Floating infinite 10s}.Improving{display:inline-block;width:32vw;vertical-align:bottom;font-size:20px}@keyframes Floating{0%{transform:translateY(0) translateX(0) rotate(0deg)}30%{transform:translateY(-5px) translateX(4px) rotate(3deg)}70%{transform:translateY(5px) translateX(-4px) rotate(-3deg)}100%{transform:translateY(0) translateX(0) rotate(0deg)}}@media only screen and (max-width:500px){#UglyScreen{display:block}*{overflow-y:none;overflow-x:none}}@media only screen and (max-width:1000px){#Countries{display:none}*{font-size:18px}.SolCube{width:30%;height:auto;font-size:14px}.SolCircle{width:30vw;height:30vw;font-size:14px;margin:5px}.Timeline{width:75px;height:75px;position:relative;top:80px}.Timeline:hover{width:100px;height:100px}}</style>
+</head>
+
+<body>
+<div id="MainTitle">
+  <h1 style="position:absolute;top:120px;left:0;right:0;margin-left:auto;margin-right:auto;">treasures in the sky</h1>
+  <p style="position:absolute;top:210px;left:0;right:0;margin-left:auto;margin-right:auto;text-shadow:0 2px 2px #000;">AND THE ROAD TO RETRIEVING THEM : THE FUTURE OF ASTEROID MINING</p>
+</div>
+<div class="SL" style="top:450px;"></div>
+<br />
+
+  <div id="Fill"></div>
+
+
+  <div id="Necessity">
+    <h1>in 2017, we extracted</h1>
+    <div class="SolCube" style="background-color:#2b8196">300,000 tonnes of bauxite,<br /> heavier than the Empire State Building<img src="https://i.ibb.co/hy11kSN/New1.png"></img></div>
+    <div class="SolCube" style="background-color:#b24a0e">19,700 tonnes of copper, or 97 Statues of Liberty<img src="https://i.ibb.co/CK8XZnS/New2.png"></img></div>
+    <div class="SolCube" style="background-color:#5646bf">33,762,500,000 cubic meters of desalinated water, at the rate of Euphrates River in the springtime<img src="https://i.ibb.co/YZ3B74B/New3.png"></img></div>
+
+  </div>
+
+
+  <div id="Sadness">
+    <h1 style="margin-bottom:0">however, these processes threaten the very land we live on.</h1>
+    <div class="SadXmple"><p><b>Vedanta Resources alumina refinery</b></p><p>- Lanjigarh, India</p><p>- Built next to bauxite mine</p><p>- Village and forest destroyed</p><p>- Leaches harmful chemicals</p></div>
+    <div class="SadGuy" style="background-image:url(https://i.ibb.co/YDKYqkz/Bleach.png)"></div>
+    <div class="SadXmple"><p><b>- Anaconda copper mine</b></p><p>- Butte, USA</p><p>- Silver Bow Creek flooded the open pit</p><p>- Land and groundwater contaminated with toxic waste</p><p>- Was largest Superfund cleanup site</p></div>
+    <div class="SadGuy" style="background-image:url(https://i.ibb.co/Xbns0rd/Bleach.png)"></div>
+    <div class="SadXmple"><p><b>Water desalination plants</b></p><p>- Saudi Arabia</p><p>- Processed seawater dumped back into sea</p><p>- The pollution increases temperature, salinity, and toxic materials</p><p>- Drives fish away while increasing algae and bleaching coral</p></div>
+    <div class="SadGuy" style="background-image:url(https://i.ibb.co/8snq3QN/Bleach.png)"></div>
+  </div>
+  <div class="SL" style="top:1550px;"></div>
+
+
+
+  <div id="Answerinsky">
+    <p>While solutions are being developed to lessen the impact of mining on the environment, we can do the Earth a favor by</p>
+    <h1>looking to the asteroids.</h1>
+    <div class="SolCircle" style="background-color:#bf3c1e"><br /><br />Instead of cutting<br /> down a forest and losing<br /> an oxygen source, <br />mine an asteroid<br /> without harming any ecosystem.</div>
+    <div class="SolCircle" style="background-color:#4f101e"><br /><br />Instead of contaminating groundwater with an open-pit mine, dig the pit on an asteroid where liquid water will never flow and be tainted.</div>
+    <div class="SolCircle" style="background-color:#1e5e2d"><br /><br />Instead of removing water from a thirsty Earth, water ice and organic subtances from asteroids can supply space stations and be<br /> made into fuel.</div>
+  </div>
+
+<div id="Bkg"></div>
+<div id="InfoTray">
+  <div id="Infobox"><br /><br />
+    <h3>There's a bounty in them all. Hover over an asteroid to view its information.</h3>
+  </div>
+  <div id="ChooseSpec">
+    Show only spectral type:<br />
+<input type="radio" class="Choose" name="asttype" value="All" checked="true">All</input><br />
+      <div style="display:inline-block; text-align:left">
+    <input type="radio" class="Choose" name="asttype" value="C"><b style="text-shadow:0 2px 2px #ff4935">C</b></input><br />
+    <input type="radio" class="Choose" name="asttype" value="M"><b style="text-shadow:0 2px 2px #506d37">M</b></input><br />
+    <input type="radio" class="Choose" name="asttype" value="E"><b style="text-shadow:0 2px 2px #33b266">E</b></input><br />
+    <input type="radio" class="Choose" name="asttype" value="P"><b style="text-shadow:0 2px 2px #3d43af">P</b></input><br />
+    <input type="radio" class="Choose" name="asttype" value="T"><b style="text-shadow:0 2px 2px #821831">T</b></input><br />
+      </div>
+      <div style="display:inline-block; text-align:left">
+    <input type="radio" class="Choose" name="asttype" value="A"><b style="text-shadow:0 2px 2px #b4db60">A</b></input><br />
+    <input type="radio" class="Choose" name="asttype" value="D"><b style="text-shadow:0 2px 2px #842972">D</b></input><br />
+    <input type="radio" class="Choose" name="asttype" value="V"><b style="text-shadow:0 2px 2px #2f5da3">V</b></input><br />
+    <input type="radio" class="Choose" name="asttype" value="S"><b style="text-shadow:0 2px 2px #afaf3f">S</b></input><br />
+    <input type="radio" class="Choose" name="asttype" value="G"><b style="text-shadow:0 2px 2px #6f57b2">G</b></input><br />
+      </div>
+  </div>
+</div>
+  <div class="SL" style="top:2650px;"></div>
+
+<div id="Benefits">
+  <h1>what's so good about mining asteroids?</h1>
+  <p style="width:80%;display:block;margin:auto">Asteroid mining obviously develops the space infrastructure and can prevent the asteroids from colliding with Earth, but global warming is also reduced because much of the emissions are released in space. </p>
+  <div id="Straps"><img class="Boot" src="https://i.ibb.co/9nMkPHw/Bleach.png"></img><img src="https://i.ibb.co/2cDHgHR/1.png" style="width:100px"></img></div>
+  <div id="Boots"><img class="Boot" src="https://i.ibb.co/9nMkPHw/Bleach.png" style="left:-1px;"></img><img src="https://i.ibb.co/dtFq6wy/2.png" style="width:50px"></img></div>
+  
+  <p style="position:absolute;bottom:4.6vw;text-align:center;width:50%;margin-left:auto;margin-right:auto;left:0;right:0;">The environmental benefits increase as efficiency increases. Move the slider to find out.</p>
+  <div id="slider">
+    <h3>Ratio of Mass Mined to Mass Brought to Mine</h3>  
+    <h1 id="SlideAmount">1</h1>
+    <br style="font-size:5.5vw;">
+    <input id="Slider" type="range" min="1" max="40" value="1"></input>
+  </div>
+  <div><h3 style="font-size:2vw;background-color:#101178;height:3.5vw;display:inline-block;border-radius:20px;padding-left:10px;padding-right:10px;box-shadow:0 5px 10px #0003;">Mining asteroidal platinum contributes <b id="ResultAmount">267</b>x less to global warming per kilogram than mining on Earth.</h3></div>
+</div>
+
+<div id="StepsTake">
+  <h1 style="margin-bottom:0">wait! we're not ready yet.</h1>
+  <div class="WhyNot">
+    <h3>Law</h3>
+    <p>The Outer Space Treaty of 1967 prohibits claiming celestial bodies, preventing large-scale asteroid mining.</p>
+    <img src="https://i.ibb.co/gRJ339L/1.png" class="WhyNo"></img>
+  </div>
+  <div class="WhyNot">
+    <h3>Money</h3>
+    <p>There's no such thing as a cheap rocket launch.<br /><b>Indian GSLV MK-III : $60 million<br />SpaceX Falcon series : $62 - 90 million<br />European Ariane : $165 - 220 million<br />ULA Delta 4 Heavy $164 - 350 million</b></p>
+    <img src="https://i.ibb.co/Y26mDmJ/Bleach.png" class="WhyNo"></img>
+  </div>
+  <div class="WhyNot">
+    <h3>Technology</h3>
+    <p>Only one asteroid sample has ever been returned from space, and there was not enough to cover the cost of the launch.</p>
+    <img src="https://i.ibb.co/Ss8NfPc/2.png" class="WhyNo"></img>
+  </div>
+</div>
+  <div class="SL" style="top:3750px;"></div>
+
+<div id="HallOfFame">
+  <h1>timeline of objectives</h1>
+  <div style="width:100vw;background-color:#fff;height:20px;position:absolute;top:150px;z-index:-1"></div>
+  <img src="https://i.ibb.co/chjwTnp/circle1522.png" class="Timeline" id="<h1>2019</h1><p>Asteroid mining proposals are already being drafted.</p>"></img>
+  <img src="https://i.ibb.co/31MYXww/2.png" class="Timeline" id="<h1>2020</h1><p>Revise existing laws such as the Outer Space Treaty and enact new ones to regulate asteroid mining in the future.</p>"></img>
+  <img src="https://i.ibb.co/1JbjbzP/Bleach.png" class="Timeline" id="<h1>2025</h1><p>Fund and incentivize asteroid mining projects, especially for private companies.</p>"></img>
+  <img src="https://i.ibb.co/12v4S8S/1.png" class="Timeline" id="<h1>2030</h1><p>Mine water for human use and for fuel to increase mileage.</p>"></img>
+  <img src="https://i.ibb.co/YkQMqZd/2.png" class="Timeline" id="<h1>2035</h1><p>Mine metals and scale up the technology.</p>"></img>
+  <br /><br /><br /><br />
+  <div id="Viewer"><br /><h3>Hover over a circle to view the year's objective.</h3></div>
+</div>
+
+<div id="Moneybag">
+  <br /><h3 style="display:block;margin:auto;width:70%;"><i>"Outer space, including the moon and other celestial bodies, is not subject to national appropriation by claim of sovereignty, by means of use or occupation, or by any other means."</i></h3>
+  <b style="display:block;margin:auto;width:60%;text-align:right">Outer Space Treaty, Article II</b>
+  <p style="display:inline-block;width:40%"><b>Before asteroid mining can be regulated, taxed, or whatsover, it has to be legalized. The above article from the Outer Space Treaty, written over fifty years ago, is open to interpretation on whether asteroid mining is allowed.</b></p>
+  <p style="display:inline-block;width:40%"><b>The treaty should be revised to clarify these new situations. Afterwards, governments come into play. They are responsible for monitoring space mining activity and creating paperwork to ensure sensible operations.</b></p>
+  <div id="Countries"><h3 style="margin:-15px"><img src="https://i.ibb.co/tJcJg88/murrica.png" style="width:100px;border-radius:10px;margin-right:20px;box-shadow:0 5px 10px #0003;position:relative;top:40px;"></img>Only two countries explicitly allow space mining:<img src="https://i.ibb.co/Mh91G0d/1.png" style="width:100px;border-radius:10px;margin-left:20px;box-shadow:0 5px 10px #0003;position:relative;top:40px;"></img></h3><br /><h3 style="margin:-15px">United States and Luxembourg.</h3></div>
+  <div class="TopIcon"><img src="https://i.ibb.co/31MYXww/2.png"></img><br /><b>2020:Law</b></div>
+</div>
+  <div class="SL" style="top:4850px;"></div>
+
+<div id="WantMoney">
+  <h3>Estimated cost of an asteroid-mining spaceship:<h2>$2.6 billion</h2></h3>
+  <h3>Estimated value of football-field sized platinum asteroid:<h2>$25 - 50 billion</h2></h3>
+  <p style="display:block;margin:auto;width:70%">No business venture is free. Although the cost may look daunting, given time for the technology to develop and spread, prices will go down. Even for a conservative scenario, the profits from asteroid mining are expected to offset the costs by 5.5 years. And although platinum prices will drop, any profit is an incentive to private companies, whose funding should be prioritized.</p>
+  <div class="TopIcon"><img src="https://i.ibb.co/1JbjbzP/Bleach.png"></img><br /><b>2025:Funding</b></div>
+</div>
+
+<div id="Other">
+  <h1>we have mined asteroids already.</h1>
+  <div class="Shipspace"><img src="https://i.ibb.co/XWSGM2W/2.png"></img><b>Hayabusa</b><br /><b>Asteroid |</b> 25143 Itokawa<br /><b> Year returned |</b> 2005<br /><b>Sample size |</b> Particles</div>
+  <div class="Shipspace"><img src="https://i.ibb.co/zQKKpPc/Bleach.png"></img><b>Hayabusa2</b><br />162183 Ryugu<br />2020<br />0.3-30g</div>
+  <div class="Shipspace"><img src="https://i.ibb.co/Gsrq9mR/1.png" style="width:15%"></img><b>OSIRIS-REx</b><br />101955 Bennu<br />2020<br />60g</div>
+  <p style="margin:5px">But these missions didn't return and will not have returned enough samples to make a profit if sold.</p>
+  <h3 style="margin:0">So how can we improve the technology?</h3>
+
+</div>
+
+  <div class="SL" style="top:5950px;"></div>
+
+<div id="RulesLaws">
+  <h1>areas of improvement</h1>
+  <div class="Improving">
+    <h3>Alternative Propulsion</h3>
+    <p>Propellant-less systems like solar and electric sails are being researched as alternative propulsion methods for spaceships, and they perform best over long distance.</p><p>Solar sails can be used to reach distant asteroids without spending much fuel.</p>
+  </div>
+  <div class="Improving">
+    <h3>Fuel Conversion</h3>
+    <p>The most common type of asteroid contains water ice and organic substances which can be converted into fuel so less fuel would have to be launched.</p><p>The asteroid mining company Planetary Resources plans to mine water for fuel to increase the spaceship's efficiency when later moving on to mining metal. </p>
+  </div>
+  <div class="Improving">
+    <h3>Atmospheric Entry</h3>
+    <p><b>The Problem</b><br />1. Object returns to Earth's atmosphere<br /> 2. Its speed frictionally heats and ionizes air.<br /> 3. Nitrogen oxides are more powerful greenhouse gases than CO<sub>2</sub> created</p><p>New ways to enter the atmosphere should be researched to reduce greenhouse gas emissions and prevent degradation of mined material.</p>
+  </div>
+  <div class="TopIcon"><img src="https://i.ibb.co/12v4S8S/1.png"></img><br /><b>2030:R&D</b></div>
+</div>
+
+<div id="Thend">
+  <br /><br /><br /><br /><br />
+  <h3>Once the previous objectives have been met, we would be ready to reap the benefits of asteroid mining.</h3>
+  <h1>earthlings, go get them.</h1>
+  <h3>The future of government extends across our world and beyond.</h3>
+  <div class="TopIcon"><img src="https://i.ibb.co/YkQMqZd/2.png"></img><br /><b>2035:Application</b></div>
+</div>
+  <div class="SL" style="top:7050px;"></div>
+
+<div id="Citation">
+  <a href="https://wdvp.worldgovernmentsummit.org/"><img src="https://i.ibb.co/VTLZycr/WLogo.png" style="margin:auto;display:block;height:100px;"></img></a>
+<p style="text-align:center;display:block">Visualization by <a href="https://www.caneia.com">Angie Bu</a></p>
+  <h1>references</h1>
+  <b style="text-align:center;display:block">Title</b>
+  <p>1. NASA/JPL-Caltech/UCLA. "Heart and Soul". <i>Space Images</i>, 24 May 2010, <a href="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA13112_hires.jpg">www.jpl.nasa.gov/spaceimages/images/largesize/PIA13112_hires.jpg</a>.</p>
+  <hr />
+  <b style="text-align:center;display:block">In 2017...</b>
+  <p>2. Bray, E Lee. <i>Mineral Commodity Summaries 2018</i>. US Geological Survey, 31 Jan. 2018, <i>p.31</i>.</p>
+  <p>3. Flanagan, Daniel M. <i>Mineral Commodity Summaries 2018</i>. US Geological Survey, 31 Jan. 2018, <i>p.53</i>.</p>
+  <p>4. International Desalination Association. "International Desalination Association and Global Water Intelligence Release New Data in 30th Worldwide Desalting Inventory." <i>Press Releases</i>, International Desalination Association, 9 Oct. 2017, <a href="https://idadesal.org/international-desalination-association-and-global-water-intelligence-release-new-data-in-30th-worldwide-desalting-inventory/">idadesal.org/international-desalination-association-and-global-water-intelligence-release-new-data-in-30th-worldwide-desalting-inventory/</a>.</p>
+  <p>5. Empire State Reality Trust. "Empire State Building Fact Sheet ." <i>esbnyc.com</i>, Empire State Building, <a href="https://www.esbnyc.com/sites/default/files/esb_fact_sheet_4_9_14_4.pdf">www.esbnyc.com/sites/default/files/esb_fact_sheet_4_9_14_4.pdf</a>. </p>
+  <p>6. National Park Service. "Statue Statistics - Statue of Liberty." <i>Statue of Liberty</i>, 8 Aug. 2015, <a href="https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm">www.nps.gov/stli/learn/historyculture/statue-statistics.htm</a>.</p>
+  <p>7. Saleh, Dina K. <i>Stream Gage Descriptions and Streamflow Statistics for Sites in the Tigris River and Euphrates River Basins </i>, Iraq. USGS, 2011, Stream Gage Descriptions and Streamflow Statistics for Sites in the Tigris River and Euphrates River Basins, Iraq, <a href="https://pubs.usgs.gov/ds/540/pdf/ds540.pdf">pubs.usgs.gov/ds/540/pdf/ds540.pdf</a>, p. 134.</p>
+  <hr />
+  <b style="text-align:center;display:block">However...</b>
+  <p>8. Wright, Nick. "IC 1396 H-Alpha Close-Up ." <i>Astronomy Picture of the Day</i>, 30 Sept. 2005, <a href="https://apod.nasa.gov/apod/image/0509/ic1396b_wright_f50.jpg">apod.nasa.gov/apod/image/0509/ic1396b_wright_f50.jpg</a>.</p>
+  <p>9. Survival International. "Dongria Kondh." <i>Survival International</i>, 2013, <a href="https://www.survivalinternational.org/tribes/dongria">www.survivalinternational.org/tribes/dongria</a>.</p>
+  <p>10. Robbins, Jim. "Let the Stream Run Through It." <i>The New York Times</i>, The New York Times, 25 June 2018, <a href="https://www.nytimes.com/2018/06/25/science/butte-superfund-silver-bow-creek.html">www.nytimes.com/2018/06/25/science/butte-superfund-silver-bow-creek.html</a>.</p>
+  <p>11. Al-Mutaz, Ibrahim S. "Environmental Impact of Seawater Desalination Plants." <i>Environmental Monitoring and Assessment</i>, vol. 16, no. 1, Jan. 1991, pp. 75–84., doi:10.1007/bf00399594.</p>
+  <hr />
+  <b style="text-align:center;display:block">While solutions...</b>
+  <p>Sources 9 and 11</p>
+  <p>12. Smolders, A. J. P., et al. "Effects of Mining Activities on Heavy Metal Concentrations in Water, Sediment, and Macroinvertebrates in Different Reaches of the Pilcomayo River, South America." <i>Archives of Environmental Contamination and Toxicology</i>, vol. 44, no. 3, 2003, pp. 314–323., doi:10.1007/s00244-002-2042-1.</p>
+  <hr />
+  <b style="text-align:center;display:block">There's a bounty...</b>
+  <p>13. Wright, Ernie. "The Star Map in Galactic Coordinates." <i>SVS:Deep Star Maps</i>, NASA/Goddard Space Flight Center Scientific Visualization Studio, 17 Jan. 2012, <a href="https://svs.gsfc.nasa.gov/vis/a000000/a003800/a003895/starmap_g4k.jpg">svs.gsfc.nasa.gov/vis/a000000/a003800/a003895/starmap_g4k.jpg</a>.</p>
+  <p>14. Neese, Carol. "Asteroid Taxonomy." <i>Planetary Data System</i>, Small Bodies Node, 9 Aug. 2010, <a href="https://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V6_0/data/taxonomy10.tab">sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V6_0/data/taxonomy10.tab</a>.</p>
+  <p>15. Morrison, D. and Zellner, B. "TRIAD Radiometric Diameters and Albedos" <i>Planetary Data System</i>, Small Bodies Node, 6 Jun. 2007, <a href="https://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_TRIADRAD_V1_0/data/triadradiom.tab">sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_TRIADRAD_V1_0/data/triadradiom.tab</a>.</p>
+  <p>16. Michel, P. "Formation and Physical Properties of Asteroids." <i>Elements</i>, vol. 10, no. 1, 2014, pp. 19–24., doi:10.2113/gselements.10.1.19.</p>
+  <p>17. Belskaya, I.n., and C.-I. Lagerkvist. "Physical Properties of M Class Asteroids." <i>Planetary and Space Science</i>, vol. 44, no. 8, Aug. 1996, pp. 783–794., doi:10.1016/0032-0633(96)00021-9.</p>
+  <p>18. Hooper, Rowan. "Seeking Earth's Core… in Space." <i>New Scientist</i>, vol. 239, no. 3191, Aug. 2018, pp. 36–37., doi:10.1016/s0262-4079(18)31483-0.</p>
+  <p>19. Gaffey, Michael J, and Michael S Kelley. "Lunar and Planetary Science XXXV." Lunar and Planetary Institute, <i>Mineralogical Variations Among High Albedo E-Type Asteroids: Implications for Asteroid Igneous Processes</i>, 1 Jan. 2004, <a href="https://www.lpi.usra.edu/meetings/lpsc2004/pdf/1812.pdf">www.lpi.usra.edu/meetings/lpsc2004/pdf/1812.pdf</a>.</p>
+  <p>20. Licandro, J., et al. "(65) Cybele: Detection of Small Silicate Grains, Water-Ice, and Organics." <i>Astronomy & Astrophysics</i>, vol. 525, 2010, doi:10.1051/0004-6361/201015339.</p>
+  <p>21. Bodewits, D., et al. "Scheila’s Scar: Direct Evidence of Impact Surface Alteration on a Primitive Asteroid." <i>Icarus</i>, vol. 229, Feb. 2014, pp. 190–195., doi:10.1016/j.icarus.2013.11.003.</p>
+  <p>22. Bottke, William F, et al. "Iron Meteorites as Remnants of Planetesimals Formed in the Terrestrial Planet Region." Received by Nature International Journal of Science, 16 Feb. 2006.</p>
+  <p>23. Finney, Ben R., and Eric M. Jones. <i>Interstellar Migration and the Human Experience.</i> University of California Press, 1986.</p>
+  <p>24. Kanno, Ai, et al. "The First Detection of Water Absorption on a D Type Asteroid." <i>Geophysical Research Letters</i>, vol. 30, no. 17, Sept. 2003, doi:10.1029/2003gl017907.</p>
+  <p>25. Newsom, Horton E. "Molybdenum in Eucrites: Evidence for a Metal Core in the Eucrite Parent Body." <i>Journal of Geophysical Research</i>, vol. 90, no. S02, 15 Feb. 1985, doi:10.1029/jb090is02p0c613.</p>
+  <p>26. Zolotov, Mikhail Yu. "On the Composition and Differentiation of Ceres." <i>Icarus</i>, vol. 204, no. 1, 11 Jun. 2009, pp. 183–193., doi:10.1016/j.icarus.2009.06.011.</p>
+  <p>27. Rivkin, A S, et al. "The Surface Composition of Ceres: Discovery of Carbonates and Iron-Rich Clays." <i>Icarus</i>, vol. 185, no. 2, 22 Aug. 2006, pp. 563–567., doi:10.1016/j.icarus.2006.08.022.</p>
+  <p>28. Tosi, F., et al. "Mineralogical Analysis of the Ac-H-6 Haulani Quadrangle of the Dwarf Planet Ceres." <i>Icarus</i>, vol. 318, 12 Aug. 2019, pp. 170–187., doi:10.1016/j.icarus.2017.08.012.</p>
+  <p>29. Gaffey, Michael J., et al. "Mineralogical Variations within the S-Type Asteroid Class." <i>Icarus</i>, vol. 106, no. 2, Dec. 1993, pp. 573–602., doi:10.1006/icar.1993.1194.</p>
+  <hr />
+  <b style="text-align:center;display:block">What's so good...</b>
+  <p>Sources 9 and 11</p>
+  <p>30. Hein, Andreas M, et al. "Exploring Potential Environmental Benefits of Asteroid Mining." University of Paris-Saclay, ArXiv, Oct. 2018, <a href="https://arxiv.org/ftp/arxiv/papers/1810/1810.04749.pdf">arxiv.org/ftp/arxiv/papers/1810/1810.04749.pdf</a>.</p>
+  <p>31. Norgate, T., and N. Haque. "Energy and Greenhouse Gas Impacts of Mining and Mineral Processing Operations." <i>Journal of Cleaner Production</i>, vol. 18, no. 3, Feb. 2010, pp. 266–274., doi:10.1016/j.jclepro.2009.09.020.</p>
+  <hr />
+  <b style="text-align:center;display:block">Wait...</b>
+  <p>Source 30</p>
+  <p>32. Takemura, Alison. "The Universe Is Full of Strange and Surprising Things.".<i> The Bubble Nebula</i>, NASA Goddard Space Flight Center, 2 June 2016, <a href="https://nasaviz.gsfc.nasa.gov/vis/a010000/a012200/a012247/pf-1024.jpg">https://nasaviz.gsfc.nasa.gov/vis/a010000/a012200/a012247/pf-1024.jpg</a>.</p>
+  <p>33. SpaceX. <i>Capabilities & Services.</i> SpaceX, <a href="https://www.spacex.com/about/capabilities">www.spacex.com/about/capabilities</a>.</p>
+  <p>34. Waldron, Greg. “Arianespace Aims High in Asia-Pacific.” <i>Flight Global</i>, 1 June 2016, <a href="https://www.flightglobal.com/news/articles/arianespace-aims-high-in-asia-pacific-425928/">www.flightglobal.com/news/articles/arianespace-aims-high-in-asia-pacific-425928/</a>.</p>
+  <p>35. Delhi Staff Writers. “India Seeks to Reduce Satellite Launch Cost.” <i>24/7 Space News</i>, 24 Jan. 2018, <a href="https://www.spacedaily.com/reports/Price_War_in_Space_India_Adopts_Technologies_to_Reduce_Satellite_Launch_Cost_999.html">www.spacedaily.com/reports/Price_War_in_Space_India_Adopts_Technologies_to_Reduce_Satellite_Launch_Cost_999.html</a>.</p>
+  <p>36. Clark, Colin. “ULA Fires Back At SpaceX At Space Symposium; Details Launch Costs.” <i>Breaking Defense</i>, Above the Law, 20 May 2014, <a href="https://breakingdefense.com/2014/05/ula-fires-back-at-spacex-at-space-symposium-details-launch-costs/">breakingdefense.com/2014/05/ula-fires-back-at-spacex-at-space-symposium-details-launch-costs/</a>.</p>
+  <hr />
+  <b style="text-align:center;display:block">Timeline...</b>
+  <p>37.Heise, Jack. "Space, the Final Frontier of Enterprise: Incentivizing Asteroid Mining Under a Revised International Framework." <i>Michigan Journal of International Law</i>, vol. 40, no. 1, 2018, pp. 189–213.</p>
+  <hr />
+  <b style="text-align:center;display:block">Outer space...</b>
+  <p>Source 37</p>
+  <p>38. NASA/JPL-Caltech/UCLA. "Seagull Nebula -- Running with the Big Dog." <i>Space Images</i>, 20 May 2010, <a href="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA13111_hires.jpg">www.jpl.nasa.gov/spaceimages/images/largesize/PIA13111_hires.jpg.</a></p>
+  <p>39. Joshi, Priyank D. "Regulating The Final Frontier: Asteroid Mining and The Need For A New Regulatory Regime." <i>Notre Dame Journal of International & Comparative Law</i>, vol. 6, no. 1, Oct. 2016, pp. 189–212.</p>
+  <hr />
+  <b style="text-align:center;display:block">Estimated cost...</b>
+  <p>Source 37</p>
+  <p>40. Hein, Andreas M, et al. "69th International Astronautical Congress." ArXiv, <i>A Techno-Economic Analysis of Asteroid Mining</i>, 1 Oct. 2018, <a href="https://arxiv.org/ftp/arxiv/papers/1810/1810.03836.pdf">arxiv.org/ftp/arxiv/papers/1810/1810.03836.pdf</a>.</p>
+  <hr />
+  <b style="text-align:center;display:block">We have...</b>
+  <p>41. NASA/JPL-Caltech/STScI. "Our Chaotic Neighbor." <i>Space</i> Images, 1 Sept. 2006, <a href="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07136_hires.jpg">www.jpl.nasa.gov/spaceimages/images/largesize/PIA07136_hires.jpg</a>.</p>
+  <p>42. "OSIRIS-REx Mission." <i>OSIRIS-REx Mission</i>, Arizona Board of Regents, 2018, <a href="https://www.asteroidmission.org/">www.asteroidmission.org/</a>.</p>
+  <p>43. "JAXA Hayabusa2 Project." <i>JAXA Hayabusa2 Project</i>, JAXA , 2013, <a href="https://www.hayabusa2.jaxa.jp/en/">www.hayabusa2.jaxa.jp/en/</a>.</p>
+  <hr />
+  <b style="text-align:center;display:block">Ares of...</b>
+  <p>Sources 30 and 37</p>
+  <hr />
+  <b style="text-align:center;display:block">Once the previous...</b>
+  <p>44. NASA/JPL-Caltech/ESA. "The Mark of a Dying Star." <i>Space Images</i>, 19 Jan. 2006, <a href="https://www.jpl.nasa.gov/spaceimages/images/wallpaper/PIA03678-1920x1200.jpg">www.jpl.nasa.gov/spaceimages/images/wallpaper/PIA03678-1920x1200.jpg</a></p>
+</div>
+
+<div id="UglyScreen">
+  <p>please turn your screen and refresh or view with a larger screen for best experience.</p>
+</div>
+
+<script>var AstNum=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","25","27","28","29","30","34","36","37","39","40","41","42","43","44","45","46","47","51","52","54","56","60","63","64","65","66","67","68","69","70","72","76","77","79","80","82","84","85","88","89","91","93","94","95","97","103","105","106","107","109","110","113","115","116","120","123","124","129","130","131","135","137","139","140","142","144","146","158","159","171","172","182","186","189","192","194","196","204","208","211","219","221","224","230","238","241","247","264","270","308","311","313","324","326","339","349","354","356","397","404","410","415","433","434","441","444","451","455","462","471","476","497","498","511","513","516","529","532","534","537","550","554","558","563","584","596","602","617","624","633","639","660","661","674","679","694","704","720","737","742","747","766","782","785","790","798","804","830","863","887","890","911","1011","1075","1087","1129","1148","1162","1172","1173","1186","1289","1416"];var AstName=["Ceres","Pallas","Juno","Vesta","Astraea","Hebe","Iris","Flora","Metis","Hygiea","Parthenope","Victoria","Egeria","Irene","Eunomia","Psyche","Thetis","Melpomene","Fortuna","Massalia","Lutetia","Kalliope","Thalia","Phocaea","Euterpe","Bellona","Amphitrite","Urania","Circe","Atalante","Fides","Laetitia","Harmonia","Daphne","Isis","Ariadne","Nysa","Eugenia","Hestia","Aglaja","Nemausa","Europa","Alexandra","Melete","Echo","Ausonia","Angelina","Cybele","Maja","Asia","Leto","Hesperia","Panopaea","Feronia","Freia","Frigga","Eurynome","Sappho","Alkmene","Klio","Io","Thisbe","Julia","Aegina","Minerva","Aurora","Arethusa","Klotho","Hera","Artemis","Dione","Camilla","Felicitas","Lydia","Amalthea","Thyra","Sirona","Lachesis","Brunhild","Alkeste","Antigone","Elektra","Vala","Hertha","Meliboea","Juewa","Siwa","Polana","Vibilia","Lucina","Koronis","Aemilia","Ophelia","Baucis","Elsa","Celuta","Phthia","Nausikaa","Prokne","Philomela","Kallisto","Lacrimosa","Isolda","Thusnelda","Eos","Oceana","Athamantis","Hypatia","Germania","Eukrate","Libussa","Anahita","Polyxo","Claudia","Chaldaea","Bamberga","Tamara","Dorothea","Dembowska","Eleonora","Liguria","Vienna","Arsinoe","Chloris","Palatia","Eros","Hungaria","Bathilde","Gyptis","Patientia","Bruchsalia","Eriphyla","Papagena","Hedwig","Iva","Tokio","Davida","Centesima","Amherstia","Preziosa","Herculina","Nassovia","Pauly","Senta","Peraga","Carmen","Suleika","Semiramis","Scheila","Marianna","Patroclus","Hektor","Zelima","Latona","Crescentia","Cloelia","Rachele","Pax","Ekard","Interamnia","Bohlinia","Arequipa","Edisona","Winchester","Moguntia","Montefiore","Zwetana","Pretoria","Ruth","Hispania","Petropolitana","Benkoela","Alinda","Waltraut","Agamemnon","Laodamia","Helina","Arabis","Neujmina","Rarahu","Larissa","Aneas","Anchises","Nikko","Banachiewicza","Malautra"];var AstDiam=[1014,589,247,530,121,204,208,162,185,430,157,135,244,150,259,247,98,162,221,134,109,174,117,72,117,125,200,94,111,119,95,157,116,203,94,85,69,244,131,158,151,292,175,144,51,93,56,309,93,59,127,108,151,95,117,66,79,83,66,87,147,210,167,104,168,190,229,108,96,126,140,213,75,75,47,93,79,171,47,74,113,174,34,79,150,172,103,52,131,141,35,140,80,65,38,50,42,99,192,161,50,48,166,39,95,72,125,154,200,143,64,51,138,27,122,252,80,45,145,154,155,50,101,135,93,22,11,65,166,279,105,30,144,113,30,71,323,40,64,29,220,30,135,52,101,64,55,51,133,137,158,233,43,58,51,43,120,71,101,338,34,46,46,204,40,15,49,176,54,141,50,34,4,32,155,7,30,56,32,34,37,129,92,40,22,33];var AstClass=["G","C","S","V","S","S","S","S","S","C","S","S","G","S","S","M","S","S","G","S","M","M","S","S","S","S","S","S","C","C","S","S","S","C","S","S","E","C","P","C","C","C","C","P","S","S","E","P","C","S","S","M","C","C","P","M","S","S","S","G","C","C","S","C","C","C","C","M","S","C","G","C","C","M","S","S","S","C","S","S","M","G","S","M","C","C","P","C","C","C","S","C","C","S","S","S","S","S","C","S","S","S","C","S","S","M","S","C","C","C","S","S","T","S","C","C","C","S","R","S","C","S","C","C","D","S","E","M","C","C","C","S","S","P","M","M","C","S","M","S","S","S","D","S","C","M","S","S","P","C","P","D","S","S","S","S","S","D","C","C","S","S","S","P","M","S","M","P","M","P","S","A","S","C","D","S","S","S","S","S","P","D","P","S","S","S"];var Textures=["https://i.ibb.co/Ks1BNbk/Tex1.png","https://i.ibb.co/w097YgB/Tex2.png","https://i.ibb.co/GHt8d0X/Tex3.png"];var LogoTex="https://i.ibb.co/TgkbgY0/WLogo.png";for(var i=0;i<AstNum.length;i++){document.getElementById("Fill").innerHTML+="<div class='Small' ></div>"}
+for(i=0;i<AstNum.length;i++){document.getElementsByClassName("Small")[i].style.top=(Math.floor(Math.random()*(document.getElementById("Fill").getBoundingClientRect().height-80))+10)+"px";document.getElementsByClassName("Small")[i].style.left=Math.floor(Math.random()*document.getElementById("Fill").getBoundingClientRect().width)+"px";document.getElementsByClassName("Small")[i].style.animationDuration=(Math.random()*6+5)+"s";document.getElementsByClassName("Small")[i].style.height=Math.pow(AstDiam[i],0.7)+"px";document.getElementsByClassName("Small")[i].style.width=Math.pow(AstDiam[i],0.7)+"px";document.getElementsByClassName("Small")[i].style.backgroundImage="url("+Textures[i%3]+")";document.getElementsByClassName("Small")[i].addEventListener("mouseover",Info.bind(null,i),!1);if(AstClass[i]=="G"){document.getElementsByClassName("Small")[i].style.boxShadow="0 2px 10px #6f57b2"}
+if(AstClass[i]=="S"){document.getElementsByClassName("Small")[i].style.boxShadow="0 2px 10px #afaf3f"}
+if(AstClass[i]=="V"){document.getElementsByClassName("Small")[i].style.boxShadow="0 2px 10px #2f5da3"}
+if(AstClass[i]=="C"){document.getElementsByClassName("Small")[i].style.boxShadow="0 2px 10px #ff4935"}
+if(AstClass[i]=="M"){document.getElementsByClassName("Small")[i].style.boxShadow="0 2px 10px #506d37"}
+if(AstClass[i]=="D"){document.getElementsByClassName("Small")[i].style.boxShadow="0 2px 10px #842972"}
+if(AstClass[i]=="E"){document.getElementsByClassName("Small")[i].style.boxShadow="0 2px 10px #33b266"}
+if(AstClass[i]=="P"){document.getElementsByClassName("Small")[i].style.boxShadow="0 2px 10px #3d43af"}
+if(AstClass[i]=="T"){document.getElementsByClassName("Small")[i].style.boxShadow="0 2px 10px #821831"}
+if(AstClass[i]=="A"){document.getElementsByClassName("Small")[i].style.boxShadow="0 2px 10px #b4db60"}}
+function Info(Order){if(window.innerWidth>800){document.getElementById("Infobox").innerHTML="<h3>"+AstNum[Order]+" "+AstName[Order]+"</h3><p>Type: "+AstClass[Order]+"</p><p> Diameter: "+AstDiam[Order]+"km</p><b>May contain:</b><br />"}else{document.getElementById("Infobox").innerHTML="<h3>"+AstNum[Order]+" "+AstName[Order]+"</h3><p style='font-size:16px'>Type: "+AstClass[Order]+", Diameter: "+AstDiam[Order]+"km, <b>May contain:</b></p><br />"}
+if(AstClass[Order]=="D"||AstClass[Order]=="G"||AstClass[Order]=="P"||AstClass[Order]=="C"){document.getElementById("Infobox").innerHTML+="<img class='Pic' src='https://i.ibb.co/nrvSRs7/Cont1.png' />";document.getElementById("Infobox").innerHTML+="<img class='Pic' src='https://i.ibb.co/z62sShc/Cont4.png' />"}
+if(AstClass[Order]=="G"||AstClass[Order]=="S"||AstClass[Order]=="A"||AstClass[Order]=="E"||AstClass[Order]=="M"){document.getElementById("Infobox").innerHTML+="<img class='Pic' src='https://i.ibb.co/D7d3Nbx/Cont2.png' />"}
+if(AstClass[Order]=="V"||AstClass[Order]=="M"){document.getElementById("Infobox").innerHTML+="<img class='Pic' src='https://i.ibb.co/2smfr6v/Cont3.png' />"}}
+document.getElementById("ChooseSpec").addEventListener("click",Filter,!1);function Filter(){var SelectedType;for(var i=0;i<11;i++){if(document.getElementsByClassName("Choose")[i].checked){SelectedType=document.getElementsByClassName("Choose")[i].value}}
+if(SelectedType=="G"){SelectedType="rgb(111, 87, 178) 0px 2px 10px";document.getElementById("Infobox").innerHTML="<p>The uncommon G-type asteroids like Ceres contain organic materials, water, and iron-rich clay. Triple treasure!</p>"}
+if(SelectedType=="S"){SelectedType="rgb(175, 175, 63) 0px 2px 10px";document.getElementById("Infobox").innerHTML="<p>The stony S-type asteroids are full of silicates and common metallic minerals.</p>"}
+if(SelectedType=="V"){SelectedType="rgb(47, 93, 163) 0px 2px 10px";document.getElementById("Infobox").innerHTML="<p>V-type asteroids, exemplified by Vesta, are made of eucrite which contain molybdenum and tungsten which are rare on Earth.</p>"}
+if(SelectedType=="C"){SelectedType="rgb(255, 73, 53) 0px 2px 10px";document.getElementById("Infobox").innerHTML="<p>Forming the majority of asteroids, C-type asteroids contain water, and their dark surfaces indicate volatile organic materials.</p>"}
+if(SelectedType=="M"){SelectedType="rgb(80, 109, 55) 0px 2px 10px";document.getElementById("Infobox").innerHTML="<p>M-type asteroids have a wide range of compositions, but most sought-after are the metallic asteroids of iron and nickel plus traces of rare metals like gold and silver.</p>"}
+if(SelectedType=="D"){SelectedType="rgb(132, 41, 114) 0px 2px 10px";document.getElementById("Infobox").innerHTML="<p>D-type asteroids, with their plain reddish spectra and dark surface, are believed to contain water and a large amount of volatile organic substances.</p>"}
+if(SelectedType=="E"){SelectedType="rgb(51, 178, 102) 0px 2px 10px";document.getElementById("Infobox").innerHTML="<p>E-type asteroids contain some iron and metallic minerals.</p>"}
+if(SelectedType=="P"){SelectedType="rgb(61, 67, 175) 0px 2px 10px";document.getElementById("Infobox").innerHTML="<p>P-type asteroids contain silicates, organic material, and a bit of water.</p>"}
+if(SelectedType=="T"){SelectedType="rgb(130, 24, 49) 0px 2px 10px";document.getElementById("Infobox").innerHTML="<p>Not much is known about the composition of the rare T-type asteroids except that their density is comparable to that of stony asteroids.</p>"}
+if(SelectedType=="A"){SelectedType="rgb(180, 219, 96) 0px 2px 10px";document.getElementById("Infobox").innerHTML="<p>A-type asteroids are rich in olivine, a gemstone used for decoration and metalworking.These rare asteroids also contain iron and nickel.</p>"}
+if(SelectedType=="All"){document.getElementById("Infobox").innerHTML="<br /><br /><h3>There's a bounty in them all. Hover over an asteroid to view its information.</h3>";for(var i=0;i<AstNum.length;i++){document.getElementsByClassName("Small")[i].style.opacity=1}}else{for(var i=0;i<AstNum.length;i++){if(document.getElementsByClassName("Small")[i].style.boxShadow==SelectedType){document.getElementsByClassName("Small")[i].style.opacity=1}else{document.getElementsByClassName("Small")[i].style.opacity=0.2}}}}
+if(window.innerWidth<800){document.getElementById("Infobox").style.fontSize="16px"}
+document.getElementById("Slider").oninput=function(){ChangeSlide()};function ChangeSlide(){document.getElementById("SlideAmount").textContent=document.getElementById("Slider").value;document.getElementById("ResultAmount").textContent=Math.round(667.3952-985.473543269/(1.46123375809+Math.pow(document.getElementById("Slider").value,0.9905547)));document.getElementsByClassName("Boot")[0].style.width=(Math.pow(document.getElementById("Slider").value,0.2)*40)+"px";document.getElementsByClassName("Boot")[0].style.left=(25-(document.getElementById("Slider").value*0.625))+"%";document.getElementsByClassName("Boot")[1].style.width=(Math.pow(document.getElementById("Slider").value,0.2)*40)+"px";document.getElementsByClassName("Boot")[1].style.left=(25-(document.getElementById("Slider").value*0.625))+"%"}
+for(var i=0;i<5;i++){document.getElementsByClassName("Timeline")[i].addEventListener("mouseover",PutYear)}
+function PutYear(e){document.getElementById("Viewer").innerHTML=e.target.id}</script>
+</body>
+
+
+
+</html>
